@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Alex Bao</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.display = "none";
+      } else {
+        document.getElementById("navbar").style.display = "initial";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+</script>
+
+<body>
+<!-- Navbar -->
+<div class="navbar">
+    <!-- Navbar content -->
+    <a class="selected" href="#welcome">Home</a>
+    <a class="" href="#about">About</a>
+    <a class="" href="#work">Work</a>
+</div>
+
+<section id="welcome">
+    <div class="container">
+        <img src="images/circle.png" class="sun no-select">
+        <div class="top-half">
+            <h1>Alex Bao</h1>
+        </div>
+        <div class="bottom-half">
+            <h1>Undergrad Student & Aspiring DILF</h1>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container" style="display: flex;">
+        <div class="left-half">
+            <img src="images/me.jpg" class="me">
+        </div>
+        <div class="right-half">
+            <div class="title">
+                About Me
+            </div>
+            <div class="text">
+                I am a sophomore at Brown University pursuing a Sc. B. in Computer Science and Mathematics. I am interested in data science and web development.<br/><br/>
+                I mostly work with Python using common data science libraries, as well as HTML, CSS, and Javascript, though I have some experience with frameworks like Bootstrap and React.js.<br/><br/>
+                For more information, you can contact me at alexander_bao@brown.edu to request a resume or transcript.
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="work">
+    <div class="container">
+        <div class="top-half">
+            <h1>Projects</h1>
+        </div>
+        <div class="bottom-half">
+        </div>
+        <div class="row">
+            <div class="column">
+                <a href="fwf"><img src="images/fwf.png" class="project"></a>
+                <div class="title">FWF</div>
+            </div>
+            <div class="column">
+                <a href="poster"><img src="images/spotify.png" class="project"></a>
+                <div class="title">Spotify Poster</div>
+            </div>
+            <div class="column">
+                <a href="fwf"><img src="images/ambulant.png" class="project"></a>
+                <div class="title">Ambulant</div>
+            </div>
+        </div>
+    </div>
+</section>
+</header>
+</body>
+</html>

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+    display: none
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+.navbar {
+    background:#000;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    letter-spacing: 1px;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 16px;
+    display:inline-block;
+    margin:15px;color:#bbb;
+    border:0;
+    text-decoration:none;
+}
+
+.navbar a:hover {
+    color:#fff;
+}
+
+.navbar a.selected {
+    color:#fff;
+    border-bottom:1px solid #fff;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+.sun {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    z-index: 10;
+    top: calc(50vh - 150px);
+    left: calc(50vw - 150px);
+}
+
+.top-half, .bottom-half {
+    height: 50vh;
+}
+
+#welcome .top-half {
+    background-color: white;
+}
+
+#welcome .bottom-half {
+    background-color: #eee;
+}
+
+.left-half, .right-half {
+    width: 50vw;
+    height: 100vh;
+}
+
+#about .left-half {
+    background-color: #fff1e0;
+}
+
+#about .right-half {
+    background-color: white;
+}
+
+#welcome h1 { 
+    position: relative;
+    top: 50%;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
+#about .me {
+    height: 400px;
+    width: 400px;
+    top: calc(50% - 200px);
+    position:relative;
+    border: 2px solid black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#about .title { 
+    margin: 30vh 0 40px 0;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+#about .text {
+    margin: 0 200px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+#work .top-half {
+    background-color: #eee;
+}
+
+#work .bottom-half {
+    background-color: white;
+}
+
+#work h1 { 
+    position: relative;
+    top: calc(50% - 100px);
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#work .column {
+    float: left;
+    width: 33.33vw;
+}
+
+#work .container:after{
+    content: "";
+    display: table;
+    clear: both;
+    position: relative;
+}
+
+#work .row {
+    height: 600px;
+    width: 100vw;
+    position: relative;
+    z-index: 10;
+    top: calc(-50vh - 200px);
+}
+
+#work .project {
+    width: 80%;
+}
