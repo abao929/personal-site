@@ -43,7 +43,7 @@ body::-webkit-scrollbar {
     font-weight: 100;
     line-height: 16px;
     display:inline-block;
-    margin:15px;color:#bbb;
+    margin:15px;color:#fff;
     border:0;
     text-decoration:none;
 }
@@ -98,12 +98,44 @@ section {
     height: 100vh;
 }
 
-#about .left-half {
-    background-color: white;
+.about-row {
+    height: calc(100vh - 284px);
+    width: calc(100vw - 284px);
+    margin: 70px;
+    border: 2px solid black;
+    padding: 70px;
 }
 
-#about .right-half {
-    background-color: white;
+.me-container {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+.me {
+    height: 100%;
+}
+
+.about-container {
+    float: right;
+    width: 65%;
+    height: 100%;
+    background-color: #fff1e0;
+    text-align: left;
+}
+
+.about-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+}
+
+.about-text {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 50px;
 }
 
 #welcome h1 { 
@@ -124,15 +156,6 @@ section {
           -ms-user-select: none; /* Internet Explorer/Edge */
               user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
-}
-
-#about .me {
-    height: 50%;
-    top: calc(25%);
-    position:relative;
-    border: 2px solid black;
-    padding: 15px;
-    border-radius: 10px;
 }
 
 #about .title { 
@@ -194,7 +217,6 @@ section {
     width: 3%;
     float: left;
     height: 100%;
-    background-color: lightsalmon;
 }
 
 .third {
@@ -235,26 +257,26 @@ section {
 	text-transform: uppercase;
 }
 
-#spotify .image-container {
-    float: left;
-}
-
-#spotify .description-container {
+#right .image-container {
     float: right;
 }
 
-#spotify .image {
+#right .description-container {
     float: left;
 }
 
-#fwf .image-container {
+#right .image {
     float: right;
 }
 
-#fwf .description-container {
+#left .image-container {
     float: left;
 }
 
-#fwf .image {
+#left .description-container {
     float: right;
+}
+
+#left .image {
+    float: left;
 }
