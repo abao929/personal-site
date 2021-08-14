@@ -10,7 +10,7 @@ function hideNav() {
 }
 
 const links = document.querySelectorAll(".links");
-const sections = document.getElementsByTagName("section");
+const sections = document.querySelectorAll("section");
 
 function changeLinkState() {
   let index = sections.length;

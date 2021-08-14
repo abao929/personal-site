@@ -58,8 +58,6 @@ body::-webkit-scrollbar {
 }
 
 section {
-    width: 100vw;
-    height: 100vh;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -67,6 +65,11 @@ section {
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     overflow: hidden;
+}
+
+#welcome, #about {
+    width: 100vw;
+    height: 100vh;
 }
 
 .sun {
@@ -147,7 +150,7 @@ section {
 }
 
 #work {
-    background-color: #fff1e0;
+    background-color: white;
 }
 
 #work h1 { 
@@ -160,27 +163,98 @@ section {
     letter-spacing: 2px;
 }
 
-#work .column {
-    float: left;
-    width: 33.33vw;
-}
-
-#work .container:after{
-    content: "";
-    display: table;
-    clear: both;
-    position: relative;
-}
-
-#work .row {
-    height: 600px;
+#work .container {
+    display: inline;
     width: 100vw;
-    position: relative;
-    z-index: 10;
-    top: calc(-50vh - 200px);
 }
 
 #work .project {
-    width: 80%;
-    border: 1px black solid;
+    height: 500px;
+    width: calc(100vw - 300px);
+    margin: 150px;
+}
+
+#work .image-container {
+    width: 40%;
+    height: 100%;
+}
+
+#work .image {
+    height: 100%;
+}
+
+#work .description-container {
+    width: 55%;
+    height: 100%;
+    background-color: #fff1e0;
+    text-align: left;
+}
+
+#work .gap {
+    width: 3%;
+    float: left;
+    height: 100%;
+    background-color: lightsalmon;
+}
+
+.third {
+    height: 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.project-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+.project-text {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0 30px;
+}
+
+#readBtn {
+	position: absolute;
+    top: 0;
+    left: 30px;
+	height: 40px;
+	width: 160px;
+	background-color: #eb7465;
+	padding: 0;
+    border: 0;
+	font-size: 14px;
+    line-height: 40px;
+	display: inline-block;
+    color: white;
+	text-decoration: none;
+    text-align: center;
+	text-transform: uppercase;
+}
+
+#spotify .image-container {
+    float: left;
+}
+
+#spotify .description-container {
+    float: right;
+}
+
+#spotify .image {
+    float: left;
+}
+
+#fwf .image-container {
+    float: right;
+}
+
+#fwf .description-container {
+    float: left;
+}
+
+#fwf .image {
+    float: right;
 }
