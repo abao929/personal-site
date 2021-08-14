@@ -14,9 +14,9 @@
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
       if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.display = "none";
+        document.getElementsByClassName("navbar")[0].style.top = "0px";
       } else {
-        document.getElementById("navbar").style.display = "initial";
+        document.getElementsByClassName("navbar")[0].style.top = "-50px";
       }
       prevScrollpos = currentScrollPos;
     }
@@ -25,12 +25,12 @@
 <body>
 <!-- Navbar -->
 <div class="navbar">
-    <!-- Navbar content -->
     <a class="selected" href="#welcome">Home</a>
     <a class="" href="#about">About</a>
     <a class="" href="#work">Work</a>
 </div>
 
+<!-- Welcome -->
 <section id="welcome">
     <div class="container">
         <img src="images/circle.png" class="sun no-select">
@@ -43,6 +43,7 @@
     </div>
 </section>
 
+<!-- About -->
 <section id="about">
     <div class="container" style="display: flex;">
         <div class="left-half">
@@ -55,12 +56,13 @@
             <div class="text">
                 I am a sophomore at Brown University pursuing a Sc. B. in Computer Science and Mathematics. I am interested in data science and web development.<br/><br/>
                 I mostly work with Python using common data science libraries, as well as HTML, CSS, and Javascript, though I have some experience with frameworks like Bootstrap and React.js.<br/><br/>
-                For more information, you can contact me at alexander_bao@brown.edu to request a resume or transcript.
+            For more information, you can contact me at <a href="mailto:alexander_bao@brown.edu">alexander_bao@brown.edu</a> to request a resume or transcript.
             </div>
         </div>
     </div>
 </section>
 
+<!-- Work -->
 <section id="work">
     <div class="container">
         <div class="top-half">
