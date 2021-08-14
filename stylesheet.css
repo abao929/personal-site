@@ -124,9 +124,8 @@ section {
 }
 
 #about .me {
-    height: 400px;
-    width: 400px;
-    top: calc(50% - 200px);
+    height: 50%;
+    top: calc(25%);
     position:relative;
     border: 2px solid black;
     padding: 15px;
