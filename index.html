@@ -6,28 +6,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheet.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
 </head>
-
-<script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementsByClassName("navbar")[0].style.top = "0px";
-      } else {
-        document.getElementsByClassName("navbar")[0].style.top = "-50px";
-      }
-      prevScrollpos = currentScrollPos;
-    }
-</script>
 
 <body>
 <!-- Navbar -->
 <div class="navbar">
-    <a class="selected" href="#welcome">Home</a>
-    <a class="" href="#about">About</a>
-    <a class="" href="#work">Work</a>
+    <a class="" href="#welcome" class="links">Home</a>
+    <a class="" href="#about" class="links">About</a>
+    <a class="" href="#work" class="links">Work</a>
 </div>
 
 <!-- Welcome -->

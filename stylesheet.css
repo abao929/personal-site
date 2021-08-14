@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
     color:#fff;
 }
 
-.navbar a.selected {
+.navbar a.active {
     color:#fff;
     border-bottom:1px solid #fff;
 }
@@ -140,7 +140,7 @@ section {
 }
 
 #about .text {
-    margin: 0 200px;
+    margin: 0 20%;
     text-align: left;
     font-weight: 300;
     font-size: 20px;
