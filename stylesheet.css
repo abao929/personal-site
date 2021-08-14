@@ -73,7 +73,7 @@ section {
     height: 300px;
     width: 300px;
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     top: calc(50vh - 150px);
     left: calc(50vw - 150px);
 }
@@ -87,7 +87,7 @@ section {
 }
 
 #welcome .bottom-half {
-    background-color: #eee;
+    background-color: #fff1e0;
 }
 
 .left-half, .right-half {
@@ -96,7 +96,7 @@ section {
 }
 
 #about .left-half {
-    background-color: #fff1e0;
+    background-color: white;
 }
 
 #about .right-half {
@@ -147,12 +147,8 @@ section {
     line-height: 24px;
 }
 
-#work .top-half {
-    background-color: #eee;
-}
-
-#work .bottom-half {
-    background-color: white;
+#work {
+    background-color: #fff1e0;
 }
 
 #work h1 { 
@@ -186,5 +182,6 @@ section {
 }
 
 #work .project {
-    width: 80%;
+    width: 60%;
+    border: 1px black solid;
 }
