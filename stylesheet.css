@@ -182,10 +182,9 @@ section {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 40px;
-    line-height: 200px;
-    height: 200px;
-    color: white;
-    background-color: #eb7465;
+    height: 100px;
+    color: black;
+    margin-bottom: -75px;
 }
 
 #work .container {
