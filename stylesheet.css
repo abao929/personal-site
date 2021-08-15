@@ -128,12 +128,13 @@ section {
     font-size: 36px;
     text-transform: uppercase;
     position: absolute;
+    font-weight: 300;
     bottom: 20px;
     left: 50px;
 }
 
 .about-text {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 200;
     margin: 0 50px;
 }
@@ -168,7 +169,7 @@ section {
     margin: 0 20%;
     text-align: left;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 24px;
 }
 
@@ -176,14 +177,15 @@ section {
     background-color: white;
 }
 
-#work h1 { 
-    position: relative;
-    top: calc(50% - 100px);
-    margin: 0;
-    padding: 0;
+.project-header {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 2px;
+    font-size: 40px;
+    line-height: 200px;
+    height: 200px;
+    color: white;
+    background-color: #eb7465;
 }
 
 #work .container {
@@ -194,7 +196,7 @@ section {
 #work .project {
     height: 500px;
     width: calc(100vw - 300px);
-    margin: 150px;
+    margin: 75px 150px;
 }
 
 #work .image-container {
@@ -226,10 +228,11 @@ section {
 }
 
 .project-title {
-    font-size: 36px;
+    font-size: 32px;
     text-transform: uppercase;
     position: absolute;
     bottom: 20px;
+    font-weight: 300;
     left: 30px;
 }
 
