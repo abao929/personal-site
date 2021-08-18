@@ -17,6 +17,16 @@ body::-webkit-scrollbar {
     display: none
 }
 
+.dark {
+    background-color: #3c3c3c !important;
+    color: white !important;
+}
+
+.darker {
+    background-color: #1e1e1e !important;
+    color: white !important;
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -26,6 +36,51 @@ body::-webkit-scrollbar {
      }
 }
 
+@keyframes sunsetAnimation {
+    0% {
+        top: calc(50vh - 134px);
+    }
+    100% {
+        top: calc(50vh);
+    }
+}
+
+@keyframes darkAnimation {
+    0% {
+        background-color: white;
+        color: black;
+    }
+    100% {
+        background-color: #3c3c3c;
+        color: white;
+     }
+}
+
+@keyframes darkerAnimation {
+    0% {
+        background-color: #fff1e0;
+        color: black;
+    }
+    100% {
+        background-color: #1e1e1e;
+        color: white;
+     }
+}
+
+.sunsetClass {
+    animation: sunsetAnimation linear 2s;
+    animation-iteration-count: 1;
+}
+
+.dark-fade {
+    animation: darkAnimation linear 2s;
+    animation-iteration-count: 1;
+}
+
+.darker-fade {
+    animation: darkerAnimation linear 2s;
+    animation-iteration-count: 1;
+}
 
 .navbar {
     background:#000;
@@ -77,20 +132,31 @@ section {
     width: 300px;
     position: absolute;
     z-index: 1;
-    top: calc(50vh - 150px);
     left: calc(50vw - 150px);
+    border-radius: 50%;
 }
 
-.top-half, .bottom-half {
+.showSun {
+    top: calc(50vh - 150px);
+}
+
+.hideSun {
+    top: 50vh;
+}
+
+.top-half, .bot-half {
     height: 50vh;
+    width: 100vw;
 }
 
 #welcome .top-half {
     background-color: white;
 }
 
-#welcome .bottom-half {
+#welcome .bot-half {
+    position: absolute;
     background-color: #fff1e0;
+    z-index: 1000;
 }
 
 .left-half, .right-half {
@@ -173,10 +239,6 @@ section {
     line-height: 24px;
 }
 
-#work {
-    background-color: white;
-}
-
 .project-header {
     font-weight: 500;
     text-transform: uppercase;
@@ -247,7 +309,7 @@ section {
     left: 30px;
 	height: 40px;
 	width: 160px;
-	background-color: #eb7465;
+	background-color: #ff7400;
 	padding: 0;
     border: 0;
 	font-size: 14px;
@@ -282,3 +344,24 @@ section {
 #left .image {
     float: left;
 }
+
+
+
+
+.hvr-sink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+    -webkit-transform: translateY(16px);
+    transform: translateY(16px);
+  }
