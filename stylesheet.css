@@ -17,16 +17,6 @@ body::-webkit-scrollbar {
     display: none
 }
 
-.dark {
-    background-color: #3c3c3c !important;
-    color: white !important;
-}
-
-.darker {
-    background-color: #1e1e1e !important;
-    color: white !important;
-}
-
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -36,54 +26,9 @@ body::-webkit-scrollbar {
      }
 }
 
-@keyframes sunsetAnimation {
-    0% {
-        top: calc(50vh - 134px);
-    }
-    100% {
-        top: calc(50vh);
-    }
-}
-
-@keyframes darkAnimation {
-    0% {
-        background-color: white;
-        color: black;
-    }
-    100% {
-        background-color: #3c3c3c;
-        color: white;
-     }
-}
-
-@keyframes darkerAnimation {
-    0% {
-        background-color: #fff1e0;
-        color: black;
-    }
-    100% {
-        background-color: #1e1e1e;
-        color: white;
-     }
-}
-
-.sunsetClass {
-    animation: sunsetAnimation linear 2s;
-    animation-iteration-count: 1;
-}
-
-.dark-fade {
-    animation: darkAnimation linear 2s;
-    animation-iteration-count: 1;
-}
-
-.darker-fade {
-    animation: darkerAnimation linear 2s;
-    animation-iteration-count: 1;
-}
 
 .navbar {
-    background:#000;
+    background-color: black;
     text-align: center;
     position: fixed;
     top: 0;
@@ -97,10 +42,11 @@ body::-webkit-scrollbar {
     font-size: 16px;
     font-weight: 100;
     line-height: 16px;
-    display:inline-block;
-    margin:15px;color:#fff;
-    border:0;
-    text-decoration:none;
+    display: inline-block;
+    margin: 15px;
+    color: #fff;
+    border: 0;
+    text-decoration: none;
 }
 
 .navbar a:hover {
@@ -149,13 +95,9 @@ section {
     width: 100vw;
 }
 
-#welcome .top-half {
-    background-color: white;
-}
 
 #welcome .bot-half {
     position: absolute;
-    background-color: #fff1e0;
     z-index: 1000;
 }
 
@@ -186,7 +128,6 @@ section {
     float: right;
     width: 65%;
     height: 100%;
-    background-color: #fff1e0;
     text-align: left;
 }
 
@@ -272,7 +213,6 @@ section {
 #work .description-container {
     width: 55%;
     height: 100%;
-    background-color: #fff1e0;
     text-align: left;
 }
 
@@ -345,8 +285,105 @@ section {
     float: left;
 }
 
+/* Darkmode Stuff */
+@keyframes setAnimation {
+    0% {
+        top: calc(50vh - 134px);
+    }
+    50% {
+        top: calc(50vh);
+    }
+    100% {
+        top: calc(50vh - 150px);
+    }
+}
 
+@keyframes darkAnimation {
+    0% {
+        background-color: white;
+        color: black;
+    }
+    100% {
+        background-color: black;
+        color: white;
+     }
+}
 
+@keyframes darkerAnimation {
+    0% {
+        background-color: #fff1e0;
+        color: black;
+    }
+    100% {
+        background-color: #1e1e1e;
+        color: white;
+     }
+}
+
+@keyframes nightAnimation {
+    0% {
+        background-color: white;
+        color: black;
+    }
+    90% {
+        background-color: black;
+        color: white;
+    }
+    100% {
+        background-image: url("images/starry-night.png");
+        color: white;
+    }
+}
+
+.setClass {
+    animation: setAnimation linear 4s;
+}
+
+.dark-fade {
+    animation: darkAnimation linear 4s;
+}
+
+.darker-fade {
+    animation: darkerAnimation linear 4s;
+}
+
+.night-fade {
+    animation: nightAnimation linear 4s;
+}
+
+.night-class {
+    background-image: url("images/starry-night.png");
+}
+
+.light-fade { 
+    animation: darkAnimation linear 4s;
+    animation-direction: reverse;
+}
+
+.lighter-fade { 
+    animation: darkerAnimation linear 4s;
+    animation-direction: reverse;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.darker {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+.lighter {
+    background-color: #fff1e0;
+    color: black
+}
 
 .hvr-sink {
     display: inline-block;
