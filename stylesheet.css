@@ -110,7 +110,6 @@ section {
     height: calc(100vh - 284px);
     width: calc(100vw - 284px);
     margin: 70px;
-    border: 2px solid black;
     padding: 70px;
 }
 
@@ -320,18 +319,12 @@ section {
      }
 }
 
-@keyframes nightAnimation {
+@keyframes borderAnimation {
     0% {
-        background-color: white;
-        color: black;
-    }
-    90% {
-        background-color: black;
-        color: white;
+        border: 2px solid black;
     }
     100% {
-        background-image: url("images/starry-night.png");
-        color: white;
+        border: 2px solid white;
     }
 }
 
@@ -347,12 +340,16 @@ section {
     animation: darkerAnimation linear 4s;
 }
 
-.night-fade {
-    animation: nightAnimation linear 4s;
+.dark-border-fade {
+    animation: borderAnimation linear 4s;
 }
 
-.night-class {
-    background-image: url("images/starry-night.png");
+.light-border {
+    border: 2px solid black;
+}
+
+.dark-border {
+    border: 2px solid white;
 }
 
 .light-fade { 
@@ -362,6 +359,11 @@ section {
 
 .lighter-fade { 
     animation: darkerAnimation linear 4s;
+    animation-direction: reverse;
+}
+
+.light-border-fade {
+    animation: borderAnimation linear 4s;
     animation-direction: reverse;
 }
 

@@ -16,6 +16,7 @@ function sunset() {
   document.body.classList.add("dark-fade");
   document.getElementsByClassName("top-half")[0].classList.add("dark-fade");
   document.getElementsByClassName("project-header")[0].classList.add("dark-fade");
+  document.getElementsByClassName("about-row")[0].classList.add("border-fade");
   document.getElementsByClassName("bot-half")[0].classList.add("darker-fade");
   document.getElementsByClassName("about-container")[0].classList.add("darker-fade");
   document.getElementsByClassName("description-container")[0].classList.add("darker-fade");
@@ -28,6 +29,7 @@ function sunset() {
     document.body.classList.remove("light");
     document.getElementsByClassName("top-half")[0].classList.remove("light");
     document.getElementsByClassName("project-header")[0].classList.remove("light");
+    document.getElementsByClassName("about-row")[0].classList.remove("light-border");
     document.getElementsByClassName("bot-half")[0].classList.remove("lighter");
     document.getElementsByClassName("about-container")[0].classList.remove("lighter");
     document.getElementsByClassName("description-container")[0].classList.remove("lighter");
@@ -42,6 +44,7 @@ function sunset() {
     document.body.classList.add("dark");
     document.getElementsByClassName("top-half")[0].classList.add("dark");
     document.getElementsByClassName("project-header")[0].classList.add("dark");
+    document.getElementsByClassName("about-row")[0].classList.add("dark-border");
     document.getElementsByClassName("bot-half")[0].classList.add("darker");
     document.getElementsByClassName("about-container")[0].classList.add("darker");
     document.getElementsByClassName("description-container")[0].classList.add("darker");
@@ -58,6 +61,7 @@ function sunrise() {
   document.body.classList.add("light-fade");
   document.getElementsByClassName("top-half")[0].classList.add("light-fade");
   document.getElementsByClassName("project-header")[0].classList.add("light-fade");
+  document.getElementsByClassName("about-row")[0].classList.add("light-border-fade");
   document.getElementsByClassName("bot-half")[0].classList.add("lighter-fade");
   document.getElementsByClassName("about-container")[0].classList.add("lighter-fade");
   document.getElementsByClassName("description-container")[0].classList.add("lighter-fade");
@@ -70,6 +74,7 @@ function sunrise() {
     document.body.classList.remove("dark");
     document.getElementsByClassName("top-half")[0].classList.remove("dark");
     document.getElementsByClassName("project-header")[0].classList.remove("dark");
+    document.getElementsByClassName("about-row")[0].classList.remove("dark-border");
     document.getElementsByClassName("bot-half")[0].classList.remove("darker");
     document.getElementsByClassName("about-container")[0].classList.remove("darker");
     document.getElementsByClassName("description-container")[0].classList.remove("darker");
@@ -77,6 +82,7 @@ function sunrise() {
     document.body.classList.remove("light-fade");
     document.getElementsByClassName("top-half")[0].classList.remove("light-fade");
     document.getElementsByClassName("project-header")[0].classList.remove("light-fade");
+    document.getElementsByClassName("about-row")[0].classList.remove("light-border-fade");
     document.getElementsByClassName("bot-half")[0].classList.remove("lighter-fade");
     document.getElementsByClassName("about-container")[0].classList.remove("lighter-fade");
     document.getElementsByClassName("description-container")[0].classList.remove("lighter-fade");
@@ -84,6 +90,7 @@ function sunrise() {
     document.body.classList.add("light");
     document.getElementsByClassName("top-half")[0].classList.add("light");
     document.getElementsByClassName("project-header")[0].classList.add("light");
+    document.getElementsByClassName("about-row")[0].classList.add("light-border");
     document.getElementsByClassName("bot-half")[0].classList.add("lighter");
     document.getElementsByClassName("about-container")[0].classList.add("lighter");
     document.getElementsByClassName("description-container")[0].classList.add("lighter");
