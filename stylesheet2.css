@@ -74,16 +74,16 @@ section {
 }
 
 .sun {
-    height: 300px;
-    width: 300px;
+    height: 18.75em;
+    width: 18.75em;
     position: absolute;
     z-index: 1;
-    left: calc(50vw - 150px);
+    left: calc(50vw - 9.375em);
     border-radius: 50%;
 }
 
 .showSun {
-    top: calc(50vh - 150px);
+    top: calc(50vh - 9.375em);
 }
 
 .hideSun {
@@ -107,7 +107,7 @@ section {
 
 .hover-text .hidden-text {
     visibility: hidden;
-    width: 120px;
+    width: 7.5em;
     bottom: 100%;
     left: 50%;
     margin-left: -60px;
@@ -143,31 +143,31 @@ section {
 }
 
 .about-row {
-    height: calc(100vh - 284px);
-    width: calc(100vw - 284px);
-    margin: 70px;
-    padding: 70px;
+    min-height: calc(100vh - 16.25em);
+    width: calc(100vw - 16.25em);
+    margin: 4em;
+    padding: 4em;
 }
 
 .me-container {
     float: left;
     width: 30%;
-    height: 100%;
+    height: 36em;
 }
 
 .me {
-    height: 100%;
+    height: 36em;
 }
 
 .about-container {
     float: right;
     width: 65%;
-    height: 100%;
+    height: 36em;
     text-align: left;
 }
 
 .about-title {
-    font-size: 36px;
+    font-size: 2.25em;
     text-transform: uppercase;
     position: absolute;
     font-weight: 300;
@@ -176,7 +176,7 @@ section {
 }
 
 .about-text {
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 200;
     margin: 0 50px;
 }
@@ -357,10 +357,10 @@ section {
 
 @keyframes borderAnimation {
     0% {
-        border: 2px solid black;
+        border: .125em solid black;
     }
     100% {
-        border: 2px solid white;
+        border: .125em solid white;
     }
 }
 
@@ -381,11 +381,11 @@ section {
 }
 
 .light-border {
-    border: 2px solid black;
+    border: .125em solid black;
 }
 
 .dark-border {
-    border: 2px solid white;
+    border: .125em solid white;
 }
 
 .light-fade { 
