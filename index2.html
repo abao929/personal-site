@@ -5,8 +5,7 @@
     <title>Alex Bao</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" media="screen and (min-device-width: 800px)" href="stylesheet.css" />
-    <link rel="stylesheet" media="screen and (max-device-width: 799px)" href="stylesheet2.css" />
+    <link rel="stylesheet" href="stylesheet2.css" />
     <script type="text/javascript" src="script.js"></script>
 </head>
 
@@ -53,47 +52,21 @@
     </div>
 </section>
 
-<section id="work">
-    <div class="container">
-        <div class="project-header light">Past Projects</div>
-        <div id="right" class="project">
-            <div class="image-container"><img src="images/spotify.png" class="image"></div>
-            <div class="description-container lighter">
-                <div class="third">
-                    <div class="project-title">
-                        Spotify Analysis
-                    </div>
-                </div>
-                <div class="third">
-                    <div class="project-text">
-                        Uses spotify api and python to generate mosaics and wordclouds from a playlist. For the mosaics, I used KMeans Clustering to get the dominant color of each image and then sorted album covers by their HSV values to create the rainbow effect.
-                    </div>
-                </div>
-                <div class="third">
-                    <a id="readBtn" class="hvr-grow" href="https://github.com/abao929/spotify">Visit Repository</a>
-                </div>
-            </div>
-        </div>
-        <div id="left" class="project">
-            <div class="image-container"><img src="images/fwf.png" class="image"></div>
-            <div class="description-container lighter">
-                <div class="third">
-                    <div class="project-title">
-                        Frees With Friends
-                    </div>
-                </div>
-                <div class="third">
-                    <div class="project-text">
-                        A website I made to display and compare schedules with friends for my high school. First time trying to use PHP to create a database for user login information, and cookies to stay signed in.
-                    </div>
-                </div>
-                <div class="third">
-                    <a id="readBtn" class="hvr-grow" href="https://github.com/abao929/fwf">Visit Repository</a>
-                </div>
-            </div>
-        </div>
+<div class="project-header light">Past Projects</div>
+<div class="project-grid">
+    <img src="images/spotify.png">
+    <div class="description">
+        <h5>Spotify Analysis</h5>
+        <p>Uses spotify api and python to generate mosaics and wordclouds from a playlist. For the mosaics, I used KMeans Clustering to get the dominant color of each image and then sorted album covers by their HSV values to create the rainbow effect.</p>
+        <a id="readBtn" class="hvr-grow" href="https://github.com/abao929/spotify">Visit Repository</a>
     </div>
-</section>
+    <img src="images/fwf.png">
+    <div class="description">
+        <h5>Frees with Friends</h5>
+        <p>A website I made to display and compare schedules with friends for my high school. First time trying to use PHP to create a database for user login information, and cookies to stay signed in.</p>
+        <a id="readBtn" class="hvr-grow" href="https://github.com/abao929/fwf">Visit Repository</a>
+    </div>
+</div>
 </header>
 </body>
 </html>
