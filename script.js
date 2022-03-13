@@ -1,3 +1,4 @@
+const wait=ms=>new Promise(resolve => setTimeout(resolve, ms));
 var prevScrollpos = window.pageYOffset;
 function hideNav() {
     var currentScrollPos = window.pageYOffset;
@@ -10,93 +11,64 @@ function hideNav() {
 }
 window.addEventListener("scroll", hideNav);
 
-function sunset() {
-  document.getElementById("sun").classList.add("setClass");
-  document.getElementById("sun").classList.remove("hvr-sink");
-  document.body.classList.add("dark-fade");
-  document.getElementsByClassName("top-half")[0].classList.add("dark-fade");
-  document.getElementsByClassName("project-header")[0].classList.add("dark-fade");
-  document.getElementsByClassName("about-row")[0].classList.add("border-fade");
-  document.getElementsByClassName("bot-half")[0].classList.add("darker-fade");
-  document.getElementsByClassName("about-container")[0].classList.add("darker-fade");
-  document.getElementsByClassName("description-container")[0].classList.add("darker-fade");
-  document.getElementsByClassName("description-container")[1].classList.add("darker-fade");
-  setTimeout(function(){
-    document.getElementById("sun").src = "images/moon.png";
-  }, 1990);
-  setTimeout(function(){
-    document.getElementById("me-image").src = "images/me-background-dark.png";
-    document.body.classList.remove("light");
-    document.getElementsByClassName("top-half")[0].classList.remove("light");
-    document.getElementsByClassName("project-header")[0].classList.remove("light");
-    document.getElementsByClassName("about-row")[0].classList.remove("light-border");
-    document.getElementsByClassName("bot-half")[0].classList.remove("lighter");
-    document.getElementsByClassName("about-container")[0].classList.remove("lighter");
-    document.getElementsByClassName("description-container")[0].classList.remove("lighter");
-    document.getElementsByClassName("description-container")[1].classList.remove("lighter");
-    document.body.classList.remove("dark-fade");
-    document.getElementsByClassName("top-half")[0].classList.remove("dark-fade");
-    document.getElementsByClassName("project-header")[0].classList.remove("dark-fade");
-    document.getElementsByClassName("bot-half")[0].classList.remove("darker-fade");
-    document.getElementsByClassName("about-container")[0].classList.remove("darker-fade");
-    document.getElementsByClassName("description-container")[0].classList.remove("darker-fade");
-    document.getElementsByClassName("description-container")[1].classList.remove("darker-fade");
-    document.body.classList.add("dark");
-    document.getElementsByClassName("top-half")[0].classList.add("dark");
-    document.getElementsByClassName("project-header")[0].classList.add("dark");
-    document.getElementsByClassName("about-row")[0].classList.add("dark-border");
-    document.getElementsByClassName("bot-half")[0].classList.add("darker");
-    document.getElementsByClassName("about-container")[0].classList.add("darker");
-    document.getElementsByClassName("description-container")[0].classList.add("darker");
-    document.getElementsByClassName("description-container")[1].classList.add("darker");
-    document.getElementById("sun").classList.remove("setClass");
-    document.getElementById("sun").classList.add("hvr-sink");
-    document.getElementById("sun").setAttribute("onclick", "sunrise()");
-  }, 3990);
+const sunset = async () => {
+  var sun = document.querySelector("#sun")
+  sun.classList.add("set");
+  sun.classList.remove("hvr-sink");
+  const primary = Array.prototype.slice.call(document.getElementsByClassName("l-first"));
+  const secondary = Array.prototype.slice.call(document.getElementsByClassName("l-second"));
+  for (let p of primary) {
+    p.classList.add("d-first-fade");
+  }
+  for (let s of secondary) {
+    s.classList.add("d-second-fade");
+  }
+  console.log(primary);
+  await wait(2000);
+  sun.src = "images/moon.png";
+  await wait(2000);
+  for (let p of primary) {
+    p.classList.remove("l-first");
+    p.classList.remove("d-first-fade");
+    p.classList.add("d-first");
+  }
+  for (let s of secondary) {
+    s.classList.remove("l-second");
+    s.classList.remove("d-second-fade");
+    s.classList.add("d-second");
+  }
+  sun.classList.remove("set");
+  sun.classList.add("hvr-sink");
+  sun.setAttribute("onclick", "sunrise()");
 }
 
-function sunrise() {
-  document.getElementById("sun").classList.add("setClass");
-  document.getElementById("sun").classList.remove("hvr-sink");
-  document.body.classList.add("light-fade");
-  document.getElementsByClassName("top-half")[0].classList.add("light-fade");
-  document.getElementsByClassName("project-header")[0].classList.add("light-fade");
-  document.getElementsByClassName("about-row")[0].classList.add("light-border-fade");
-  document.getElementsByClassName("bot-half")[0].classList.add("lighter-fade");
-  document.getElementsByClassName("about-container")[0].classList.add("lighter-fade");
-  document.getElementsByClassName("description-container")[0].classList.add("lighter-fade");
-  document.getElementsByClassName("description-container")[1].classList.add("lighter-fade");
-  setTimeout(function(){
-    document.getElementById("sun").src = "images/sun.png";
-  }, 1990);
-  setTimeout(function(){
-    document.getElementById("me-image").src = "images/me-background.png";
-    document.body.classList.remove("dark");
-    document.getElementsByClassName("top-half")[0].classList.remove("dark");
-    document.getElementsByClassName("project-header")[0].classList.remove("dark");
-    document.getElementsByClassName("about-row")[0].classList.remove("dark-border");
-    document.getElementsByClassName("bot-half")[0].classList.remove("darker");
-    document.getElementsByClassName("about-container")[0].classList.remove("darker");
-    document.getElementsByClassName("description-container")[0].classList.remove("darker");
-    document.getElementsByClassName("description-container")[1].classList.remove("darker");
-    document.body.classList.remove("light-fade");
-    document.getElementsByClassName("top-half")[0].classList.remove("light-fade");
-    document.getElementsByClassName("project-header")[0].classList.remove("light-fade");
-    document.getElementsByClassName("about-row")[0].classList.remove("light-border-fade");
-    document.getElementsByClassName("bot-half")[0].classList.remove("lighter-fade");
-    document.getElementsByClassName("about-container")[0].classList.remove("lighter-fade");
-    document.getElementsByClassName("description-container")[0].classList.remove("lighter-fade");
-    document.getElementsByClassName("description-container")[1].classList.remove("lighter-fade");
-    document.body.classList.add("light");
-    document.getElementsByClassName("top-half")[0].classList.add("light");
-    document.getElementsByClassName("project-header")[0].classList.add("light");
-    document.getElementsByClassName("about-row")[0].classList.add("light-border");
-    document.getElementsByClassName("bot-half")[0].classList.add("lighter");
-    document.getElementsByClassName("about-container")[0].classList.add("lighter");
-    document.getElementsByClassName("description-container")[0].classList.add("lighter");
-    document.getElementsByClassName("description-container")[1].classList.add("lighter");
-    document.getElementById("sun").classList.remove("setClass");
-    document.getElementById("sun").classList.add("hvr-sink");
-    document.getElementById("sun").setAttribute("onclick", "sunset()");
-  }, 3990);
+const sunrise = async () => {
+  var sun = document.querySelector("#sun")
+  sun.classList.add("set");
+  sun.classList.remove("hvr-sink");
+  const primary = Array.prototype.slice.call(document.getElementsByClassName("d-first"));
+  const secondary = Array.prototype.slice.call(document.getElementsByClassName("d-second"));
+  for (let p of primary) {
+    p.classList.add("l-first-fade");
+  }
+  for (let s of secondary) {
+    s.classList.add("l-second-fade");
+  }
+  await wait(1990);
+  sun.src = "images/sun.png";
+  await wait(2000);
+  for (let p of primary) {
+    p.classList.remove("d-first");
+    p.classList.remove("l-first-fade");
+    p.classList.add("l-first");
+  }
+  for (let s of secondary) {
+    s.classList.remove("d-second");
+    s.classList.remove("l-second-fade");
+    s.classList.add("l-second");
+  }
+  sun.cla
+  sun.classList.remove("set");
+  sun.classList.add("hvr-sink");
+  sun.setAttribute("onclick", "sunset()");
 }
