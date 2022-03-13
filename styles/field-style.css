@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Bogart-Regular;
+  min-height: 100%;
+  background: #111;
+  color: #e8e8e8;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+ul,
+ol {
+  list-style-position: inside;
+}
+
+li {
+  text-indent: -1em;
+  padding-left: 1em;
+  margin: 6px 0;
+}
+
+h1 {
+  width: fit-content;
+  background: linear-gradient(
+    95deg,
+    #edca85 20%,
+    #f093b0 40%,
+    #a162e8 60%,
+    #a0e9ff 80%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.o-flex {
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+
+.c-water-hazard {
+  color: #0575e6;
+}
+
+/* Welcome Section */
+.c-welcome {
+  font-family: Bogart;
+  max-width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.c-welcome__box {
+  padding: 15%;
+}
+
+.c-welcome__title {
+  font-size: 64px;
+  color: #fff;
+  background: linear-gradient(
+    271deg,
+    #a0e9ff 30%,
+    #a162e8 50%,
+    #f093b0 70%,
+    #edca85 94%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.c-welcome__img > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  border-radius: 3%;
+}
+
+.c-welcome__sub {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Rules Section */
+.c-rules {
+  margin: 0 20% 5% 20%;
+  font-size: 24px;
+}
+
+.c-rules__title {
+  margin: 0 0 10px 0;
+}
+
+.c-rules__sub {
+  line-height: 36px;
+}
+
+/* Logistics - Course - Activities */
+.c-planning {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  margin: 0 0 70px 0;
+}
+
+.c-third__title {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.c-third {
+  background: #191919;
+  height: 170px;
+  width: 330px;
+  border-radius: 20px;
+  position: relative;
+  display: block;
+  transition: all 0.4s ease-in-out;
+  padding: 2em 2em 3em 2em;
+  font-size: 18px;
+}
+
+.c-third2 {
+  background: #191919;
+  height: 160px;
+  width: 330px;
+  border-radius: 20px;
+  position: relative;
+  display: block;
+  transition: all 0.4s ease-in-out;
+  padding: 2em 2em 3em 2em;
+  font-size: 18px;
+}
+
+li > a {
+  color: white;
+  text-decoration: none;
+}
+
+li > a:hover {
+  color: #0078d7;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Contestants */
+.c-athletes__header {
+  margin: auto;
+  font-size: 64px;
+}
+
+.c-athlete {
+  background: #191919;
+  width: 40%;
+  margin: 60px auto;
+  border-radius: 20px;
+  position: relative;
+  display: block;
+  transition: all 0.4s ease-in-out;
+  padding: 3em 6em;
+  font-size: 18px;
+  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+}
+
+.c-athlete__name {
+  font-size: 48px;
+}
+
+.c-athlete__img > img {
+  display: block;
+  object-fit: cover;
+  width: 60%;
+  max-height: 40%;
+  border-radius: 3%;
+  margin: 10px auto;
+}
+
+.c-athlete__nickname {
+  font-size: 48px;
+  text-align: center;
+  border-bottom: solid white 1px;
+  margin: 0 12%;
+}
+
+.c-athlete__ratings {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  margin: 0 14%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.c-athlete__rating {
+  margin: 4px 0;
+}
+
+.c-athlete__blurb {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-text .hidden-text {
+  visibility: hidden;
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  text-transform: none;
+  font-size: 12px;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+}
+
+.hover-text:hover .hidden-text {
+  visibility: visible;
+}
+
+.hover-text .hidden-text::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #111 transparent transparent transparent;
+}
+
+.c-teams {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin: 30px auto;
+  width: 72%;
+}
+
+.c-team {
+  background: #191919;
+  display: block;
+  padding: 2em 2em 3em 2em;
+  width: 300px;
+  border-radius: 20px;
+  margin: 30px 0;
+  font-size: 24px;
+}
+
+.c-team__title {
+  font-size: 32px;
+}
+
+/* Mobile Formatting */
+@media (max-width: 768px) {
+  .o-flex {
+    width: 90%;
+  }
+
+  /* Welcome Section */
+  .c-welcome {
+    height: 70vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .c-welcome__title {
+    font-size: 36px;
+  }
+
+  .c-welcome__box {
+    padding: 5%;
+  }
+
+  .c-welcome__sub {
+    color: #fff;
+    font-size: 12px;
+  }
+
+  /* Rules section */
+  .c-rules {
+    margin: 10%;
+    font-size: 12px;
+  }
+
+  .c-rules__sub {
+    line-height: 20px;
+  }
+
+  /* Logistics - Course - Activities */
+  .c-planning {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    margin: 0;
+  }
+
+  .c-third {
+    max-width: calc(90%-2em);
+    height: auto;
+    margin: 20px 0;
+    padding: 2em 0 2em 2em;
+    font-size: 12px;
+  }
+
+  .c-third2 {
+    max-width: calc(90%-2em);
+    height: auto;
+    margin: 20px 0;
+    padding: 2em 0 2em 2em;
+    font-size: 12px;
+  }
+
+  .c-third__title {
+    font-size: 16px;
+  }
+
+  /* athletes */
+  .c-athletes__header {
+    margin: auto;
+    font-size: 36px;
+  }
+
+  .c-athlete {
+    width: calc(90% - 4em);
+    height: auto;
+    margin: 40px auto;
+    padding: 2em;
+    font-size: 12px;
+  }
+
+  .c-athlete__name,
+  .c-athlete__nickname {
+    font-size: 32px;
+  }
+
+  .c-athlete__nickname {
+    margin: 0 4%;
+  }
+
+  .c-athlete__ratings {
+    margin-left: 4%;
+    width: 92%;
+  }
+
+  .c-athlete__rating {
+    margin: 2px 0;
+  }
+
+  .c-athlete__blurb {
+    font-size: 16px;
+  }
+
+  /* Teams */
+  .c-teams {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+
+  .c-team {
+    max-width: calc(90%-2em);
+    height: auto;
+    margin: 20px 0;
+    padding: 2em 0 2em 2em;
+    font-size: 12px;
+  }
+
+  .c-team__title {
+    font-size: 24px;
+  }
+}
+
+@font-face {
+  font-family: "Bogart";
+  src: url("BOGARTMEDIUMTRIAL.TTF");
+}
+
+@font-face {
+  font-family: "Bogart-Regular";
+  src: url("BOGARTREGULARTRIAL.TTF");
+}
