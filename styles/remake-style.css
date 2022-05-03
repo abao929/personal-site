@@ -149,13 +149,19 @@ body::-webkit-scrollbar {
 .brands-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 90%;
+  width: 70%;
+  padding: 0 10%;
   margin: auto;
-  grid-gap: 60px;
+  grid-gap: 20px 60px;
 }
 
 .brand > img {
-  width: 100%;
+  width: 80%;
+}
+
+.brand__text {
+  grid-column: span 3;
+  text-align: center;
 }
 
 .footer-container {
@@ -173,6 +179,5 @@ body::-webkit-scrollbar {
   font-weight: 700;
   line-height: 18px;
   margin: 16px;
-  color: rgba(0, 0, 0, 0.8);
   border: 0;
 }
