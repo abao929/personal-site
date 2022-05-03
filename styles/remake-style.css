@@ -161,6 +161,7 @@ body::-webkit-scrollbar {
 
 .brand__text {
   grid-column: span 3;
+  margin: 0 0 20px 0;
   text-align: center;
 }
 
