@@ -125,7 +125,7 @@ body::-webkit-scrollbar {
   grid-column: span 3;
 }
 
-.case__img > img {
+.case__img img {
   width: 100%;
 }
 
