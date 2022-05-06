@@ -127,6 +127,9 @@ body::-webkit-scrollbar {
 
 .case__img img {
   width: 100%;
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
 }
 
 .case__text {
@@ -182,4 +185,63 @@ body::-webkit-scrollbar {
   line-height: 18px;
   margin: 16px;
   border: 0;
+}
+
+@media (max-width: 900px) {
+  .gallery {
+    width: 86%;
+    padding: 0 7%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 40px;
+  }
+
+  .gallery__item--1 {
+    grid-column: span 1;
+  }
+
+  .gallery__item--2 {
+    grid-column: span 1;
+  }
+
+  .gallery__item--3 {
+    grid-column: span 1;
+  }
+
+  .gallery__item--3 {
+    grid-column: span 1;
+  }
+
+  .gallery__item--4 {
+    grid-column: span 1;
+  }
+
+  .gallery__item--5 {
+    grid-column: span 1;
+  }
+
+  .gallery__item--6 {
+    grid-column: span 1;
+  }
+
+  .gallery__item--7 {
+    grid-column: span 1;
+  }
+
+  .case {
+    grid-template-columns: 1fr;
+  }
+
+  .case__img {
+    width: 60%;
+  }
+
+  .case__title {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+
+  .case__description {
+    font-size: 16px;
+  }
 }

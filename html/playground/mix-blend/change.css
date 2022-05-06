@@ -1,0 +1,34 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  background: #fff;
+}
+
+section:nth-child(odd) {
+  background: #000;
+}
+
+.text {
+  -webkit-user-select: none;
+  user-select: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mix-blend-mode: difference;
+  z-index: 1;
+}
+
+.text h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 160px;
+}
