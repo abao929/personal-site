@@ -5,10 +5,6 @@
   padding: 0;
 }
 
-html {
-  /* overflow-x: hidden; */
-}
-
 section {
   width: 100vw;
   height: 100vh;
@@ -31,7 +27,7 @@ section {
   position: relative;
   border: none;
   height: 1px;
-  background-color: #675c3e; /* Modern Browsers */
+  background-color: #675c3e;
   top: 65vh;
 }
 
@@ -63,13 +59,11 @@ section {
 #_1 .rhs {
   display: grid;
   grid-template-rows: 35vh 65vh;
-  /* background-color: antiquewhite; */
 }
 
 #_1 .login-container {
   border-bottom: 1px solid #675c3e;
   position: relative;
-  /* background-color: blue; */
   width: 100%;
 }
 
@@ -90,14 +84,12 @@ section {
   text-align: center;
   font-size: 32px;
   letter-spacing: 6px;
-  /* font-family: 'Roboto'; */
   text-transform: uppercase;
   cursor: default;
 }
 
 /* Form Styling */
 #_1 .form-container {
-  /* background-color: red; */
   width: calc(100% - 20vw);
   padding: 4vh 10vw 0 10vw;
 }
