@@ -55,7 +55,7 @@ section {
   align-items: center;
   left: -2vw;
   top: 15vh;
-  cursor: text;
+  cursor: default;
 }
 
 /* RHS */
@@ -70,12 +70,6 @@ section {
   position: relative;
   /* background-color: blue; */
   width: 100%;
-}
-
-._1 .form-container {
-  /* background-color: red; */
-  width: calc(100% - 20vw);
-  padding: 10vh 10vw 0 10vw;
 }
 
 ._1 .circle {
@@ -94,15 +88,19 @@ section {
   bottom: 0px;
   text-align: center;
   font-size: 32px;
-  font-weight: 300;
-  font-family: 'Roboto';
+  letter-spacing: 6px;
+  /* font-family: 'Roboto'; */
   text-transform: uppercase;
-}
-
-._1 .bar-2 {
+  cursor: default;
 }
 
 /* Form Styling */
+._1 .form-container {
+  /* background-color: red; */
+  width: calc(100% - 20vw);
+  padding: 4vh 10vw 0 10vw;
+}
+
 ._1 form {
   width: 100%;
 }
@@ -118,6 +116,20 @@ section {
   color: transparent;
 }
 
-._1 input[type='text'] {
+._1 input {
   width: 100%;
+  padding: 12px 10px;
+  box-sizing: border-box;
+  margin: 12px 0;
+  border: 1px solid #675c3e;
+  border-radius: 4px;
+}
+
+._1 input[type='submit'] {
+  text-transform: uppercase;
+  box-sizing: border-box;
+  background-color: #d8d8d0;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
