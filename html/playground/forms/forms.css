@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Page 1 */
+._1 {
+  background-color: #f0f0e8;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+._1 .lhs {
+  border-right: #675c3e 1px solid;
+}
+
+._1 .login-text {
+  position: relative;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  text-transform: uppercase;
+  font-size: 56px;
+  height: 80vh;
+  width: 300px;
+  border: #bbb6b3 3px solid;
+  border-radius: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 14vw;
+  top: 10vh;
+  cursor: text;
+}
+
+._1 .bar {
+  border-top: #675c3e 1px solid;
+}
+
+._1 .rhs {
+  display: flex;
+  padding: 15vh 10vw;
+  height: 70vh;
+  width: 46.67vw;
+}
+
+._1 form {
+  width: 100%;
+}
+
+._1 .names {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  width: 100%;
+}
+
+._1 input:focus::placeholder {
+  color: transparent;
+}
+
+._1 input[type='text'] {
+  width: 100%;
+}
