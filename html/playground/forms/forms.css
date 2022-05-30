@@ -121,7 +121,7 @@ section {
   width: 100%;
   padding: 12px 10px;
   box-sizing: border-box;
-  margin: 12px 0;
+  margin: 16px 0;
   border: 1px solid #675c3e;
   border-radius: 4px;
   outline: none;
@@ -149,7 +149,7 @@ section {
   position: absolute;
   z-index: 2;
   left: 10px;
-  top: 24px;
+  top: 28px;
   padding: 0 2px;
   pointer-events: none;
   background-color: transparent;
@@ -158,11 +158,11 @@ section {
   -o-transition: -o-transform 200ms ease;
   -ms-transition: -ms-transform 200ms ease;
   transition: transform 200ms ease;
-  -webkit-transform: translateY(-24px);
-  -moz-transform: translateY(-24px);
-  -o-transform: translateY(-24px);
-  -ms-transform: translateY(-24px);
-  transform: translateY(-24px);
+  -webkit-transform: translateY(-32px);
+  -moz-transform: translateY(-32px);
+  -o-transform: translateY(-32px);
+  -ms-transform: translateY(-32px);
+  transform: translateY(-32px);
 }
 
 #_1 input:invalid + label {
