@@ -1,17 +1,33 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/cooper-black');
+@import url('http://fonts.cdnfonts.com/css/lost-castedral');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;500;600;700&display=swap');
+@font-face {
+  font-family: 'Magnolia';
+  src: url(../../../styles/Magnolia.ttf);
+}
 
+/* Margin & Padding full reset */
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Fullpage sections */
 section {
   width: 100vw;
   height: 100vh;
 }
 
-/* Page 1 */
-#_1 {
+/* 
+  Page 1
+  Inspiration - https://www.behance.net/gallery/139962237/Industrial-Design-Portfolio-2022
+  Colors      - #f0f0e8, #675c3e, #bbb6b3, #000, #d8d8d0
+  Hours Spent - 7?
+  Rating      - 10/10
+*/
+section#_1 {
   background-color: #f0f0e8;
   display: grid;
   grid-template-columns: 1fr 0fr 2fr;
@@ -177,4 +193,113 @@ section {
   -o-transform: translateY(-30px);
   -ms-transform: translateY(-30px);
   transform: translateY(-30px);
+}
+
+/*
+  Page 2
+  Inspiration - Chobani
+  Colors - #fff, #193c34, #ebe7cb, #68a975
+  Fonts - Cooper Black, Lost Castedral
+*/
+
+section#_2 {
+  background-color: #f4f3ef;
+  display: grid;
+  grid-template-columns: 1fr 4px 1fr;
+}
+
+/* Curved Text */
+#_2 .arced {
+  position: relative;
+  top: 80px;
+  font-family: 'Cooper Black', sans-serif;
+  font-size: 96px;
+  color: #193c34;
+  position: relative;
+  border-radius: 50%;
+  transform: rotate(-39deg);
+  cursor: default;
+}
+
+#_2 span {
+  height: 400px;
+  position: absolute;
+  width: 20px;
+  transform-origin: bottom center;
+}
+
+/* Should've used SASS for this bit lol */
+#_2 .c1 {
+  transform: rotate(0deg);
+}
+
+#_2 .c2 {
+  transform: rotate(12deg);
+}
+
+#_2 .c3 {
+  transform: rotate(24deg);
+}
+
+#_2 .c4 {
+  transform: rotate(36deg);
+}
+
+#_2 .c5 {
+  transform: rotate(48deg);
+}
+
+#_2 .c6 {
+  transform: rotate(60deg);
+}
+
+#_2 .c7 {
+  transform: rotate(72deg);
+}
+
+#_2 .subtitle {
+  width: 80%;
+  padding: 0 10%;
+  position: relative;
+  top: 400px;
+  font-family: 'Magnolia';
+  color: #193c34;
+}
+
+#_2 .subtitle-p1 {
+  font-size: 28px;
+}
+
+#_2 .subtitle-p2 {
+  font-size: 16px;
+}
+
+#_2 a {
+  text-decoration: none;
+  color: #193c34;
+}
+
+#_2 .divider {
+  margin-top: calc(50vh - 150px);
+  height: 300px;
+  width: 100%;
+  background-color: #193c34;
+}
+
+#_2 .title-text {
+  color: #193c34;
+  font-size: 64px;
+  font-weight: 100;
+}
+
+#_2 .test {
+  font-family: 'Magnolia';
+}
+
+#_2 .test2 {
+  font-family: 'Lost Castedral';
+}
+
+#_2 .test3 {
+  font-family: 'Cormorant';
 }
