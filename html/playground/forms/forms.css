@@ -1,8 +1,8 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;500;600;700&display=swap');
 @import url('http://fonts.cdnfonts.com/css/cooper-black');
 @import url('http://fonts.cdnfonts.com/css/lost-castedral');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;500;600;700&display=swap');
 @font-face {
   font-family: 'Magnolia';
   src: url(../../../styles/Magnolia.ttf);
