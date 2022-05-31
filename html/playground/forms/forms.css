@@ -24,8 +24,14 @@ section {
   Page 1
   Inspiration - https://www.behance.net/gallery/139962237/Industrial-Design-Portfolio-2022
   Colors      - #f0f0e8, #675c3e, #bbb6b3, #000, #d8d8d0
+  Fonts       - Default lol
   Hours Spent - 7?
-  Rating      - 10/10
+  Rating      - 8/10
+  Takeaways   - Should've spent some time in Figma laying this out and planning the HTML layout better.
+                Unsure of how to make these shapes responsive.
+                Responsive layout is doomed, maybe pt. 2 is just going back
+                and refactoring all this code so it's responsive.
+
 */
 section#_1 {
   background-color: #f0f0e8;
@@ -198,8 +204,15 @@ section#_1 {
 /*
   Page 2
   Inspiration - Chobani
-  Colors - #fff, #193c34, #ebe7cb, #68a975
-  Fonts - Cooper Black, Lost Castedral
+  Colors - #193c34, #f4f3ef, and tints of each
+  Fonts - Cooper Black, Magnolia
+  Hours Spent - 6
+  Rating      - 9/10
+  Takeaways   - Again should've spent some time in Figma first, though the layout was p simple.
+                However, since I came up w the design, it was a bit harder than copying.
+                This form looks so much better than the previous one, though the previous patterns were cooler.
+                Color and font goes a loooong way.
+                Typography is sick and I want to make my own font. Pls let me into a RISD course.
 */
 
 section#_2 {
@@ -292,8 +305,6 @@ section#_2 {
   margin: 20vh 10%;
   height: 60vh;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 #_2 .form-title {
@@ -312,6 +323,8 @@ section#_2 {
   height: calc(100% - 140px);
   border-radius: 0 0 20px 20px;
   padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 /* Form Styling */
@@ -339,6 +352,7 @@ section#_2 {
   border-radius: 4px;
   outline: none;
   position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #_2 input[type='text'] {
@@ -402,3 +416,13 @@ section#_2 {
   font-size: 64px;
   font-weight: 100;
 }
+
+/*
+  Page 3
+  Inspiration - Piece of paper on a table???
+  Colors - 
+  Fonts - 
+  Hours Spent - 
+  Rating      - ?/10
+  Takeaways   - OK THIS ONE'S GONNA HAVE A FIGMA, SASS, AND RESPONSIVE - HALF WEEK PROJECT!!!
+*/
