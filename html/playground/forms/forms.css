@@ -1,7 +1,7 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;500;600;700&display=swap');
-@import url('http://fonts.cdnfonts.com/css/lost-castedral');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @font-face {
   font-family: 'Cooper Black';
   src: url(../../../styles/COOPBL.TTF);
@@ -429,8 +429,141 @@ section#_2 {
   Takeaways   - OK THIS ONE'S GONNA HAVE A FIGMA, SASS, AND RESPONSIVE - HALF WEEK PROJECT!!!
 */
 
+section#_3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#_3 .lhs {
+  position: relative;
+}
+
+#_3 .svg {
+  position: absolute;
+  left: 5vw;
+  width: 80%;
+  height: 100vh;
+  z-index: -1000;
+  transform: scale(-1, 1);
+}
+
+#_3 .content {
+  margin: 20vh 0;
+  height: 40vh;
+  padding: 10vh;
+  background-color: #ffcd00;
+}
+
+#_3 .title {
+  font-family: 'Playfair Display';
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+#_3 .subtitle > * {
+  margin: 32px 0;
+}
+
+#_3 .p1 {
+  font: italic normal 300 24px / 32px 'Playfair Display';
+}
+
+#_3 .p2 {
+  font: 16px / 16px 'Playfair Display';
+}
+
+#_3 .p3 {
+  font: bold 24px 'Playfair Display';
+}
+
+#_3 .rhs {
+  background-color: #000;
+}
+
+#_3 .form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  padding: 0 15%;
+  background-color: azure;
+}
+
+#_3 .form-title {
+  color: #ffcd00;
+  font: 500 48px 'Playfair Display';
+  text-align: center;
+  margin: 40px 0;
+}
+
+#_3 .form-container > form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+#_3 input:focus::placeholder {
+  color: transparent;
+}
+
+#_3 input {
+  width: 100%;
+  padding: 12px 10px;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 1px solid #675c3e;
+  border-radius: 4px;
+  outline: none;
+  position: relative;
+}
+
+#_3 input[type='submit'] {
+  text-transform: uppercase;
+  box-sizing: border-box;
+  background-color: #d8d8d0;
+  color: #fff;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/* Label Effect */
+#_3 .field {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+#_3 label {
+  color: #675c3e;
+  position: absolute;
+  z-index: 2;
+  left: 10px;
+  top: 28px;
+  padding: 0 2px;
+  pointer-events: none;
+  background-color: transparent;
+  transition: transform 200ms ease;
+  transform: translateY(-32px);
+}
+
+#_3 input:invalid + label {
+  transform: translateY(0);
+}
+
+#_3 input:focus {
+  border-color: #000;
+}
+
+#_3 input:focus + label {
+  color: #000;
+  background-color: transparent;
+  transform: translateY(-30px);
+}
+
 /*
-  Page 3
+  Page 4
   Inspiration - Piece of paper on a table???
   Colors - 
   Fonts - 
