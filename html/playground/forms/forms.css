@@ -6,9 +6,52 @@
   font-family: 'Cooper Black';
   src: url(../../../styles/COOPBL.TTF);
 }
+
 @font-face {
   font-family: 'Magnolia';
   src: url(../../../styles/Magnolia.ttf);
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-weight: 100;
+  src: url(../../../styles/HelveticaNeue\ Light.ttf);
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-weight: 400;
+  src: url(../../../styles/HelveticaNeue\ Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-weight: 700;
+  src: url(../../../styles/Helvetica\ Neu\ Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Domaine Display Narrow';
+  font-weight: 400;
+  src: url(../../../styles/DomaineDispNar-Regular.woff);
+}
+
+@font-face {
+  font-family: 'Domaine Display Narrow';
+  font-weight: 500;
+  src: url(../../../styles/DomaineDispNar-Medium.woff);
+}
+
+@font-face {
+  font-family: 'Domaine Display Narrow';
+  font-weight: 600;
+  src: url(../../../styles/DomaineDispNar-Semibold.woff);
+}
+
+@font-face {
+  font-family: 'Domaine Display Narrow';
+  font-weight: 700;
+  src: url(../../../styles/DomaineDispNar-Bold.woff);
 }
 
 /* Margin & Padding full reset */

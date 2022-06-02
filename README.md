@@ -46,7 +46,7 @@ Inspiration - [Tapestry](https://www.tapestry.com/)
 Colors - #ffcd00, #000, #fff3c0 - black and yellow  
 Fonts - Playfair Display  
 Hours Spent - 6  
-Rating - 7/10  
+Rating - 6/10  
 Takeaways - OK THIS ONE'S GONNA HAVE A FIGMA, SASS, AND RESPONSIVE - HALF WEEK PROJECT!!! So I kinda lied. Only have a [Figma](https://www.figma.com/file/7cmxxP2rDHfeB6BYVRFCg5/Form-3?node-id=0%3A1). Making this responsive seems too hard because of the SVG sizing. I don't think there really was a need for SASS for this section though this project as a whole should have been done in SASS since it has the nested selectors which would make this a lot cleaner than having to select using #\_x for each page. Overall, this design just looks kinda chunky and not as clean as the Figma.
 
 ---
