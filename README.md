@@ -15,7 +15,7 @@ A silly website I built in React with Typescript that alrets you about your post
 
 Somewhere hidden in the recesses of the site is a ["playground"](https://abao929.github.io/html/playground/forms/forms.html) of sorts. I didn't know what to name it, but it's essentially just smaller snippets of stuff that I wanted to learn/mess around with.
 
-### Case Study: Forms
+### Case Study: [Forms](https://abao929.github.io/html/playground/forms/forms.html)
 
 Page 1  
 Inspiration - [Behance Design](https://www.behance.net/gallery/139962237/Industrial-Design-Portfolio-2022)  
