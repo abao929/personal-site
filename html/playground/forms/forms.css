@@ -354,10 +354,11 @@ section#_2 {
   border-radius: 4px;
   outline: none;
   position: relative;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
-#_2 input[type='text'] {
+#_2 input[type='text'],
+#_2 input[type='password'] {
   border: 1px solid #193c34;
   background-color: #f7f6f3;
   font-family: 'Magnolia';
@@ -478,16 +479,16 @@ section#_3 {
 
 #_3 .rhs {
   background-color: #000;
-}
-
-#_3 .form-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#_3 .form-container {
   width: 70%;
   padding: 0 15%;
-  background-color: azure;
+  /* background-color: azure; */
 }
 
 #_3 .form-title {
@@ -510,20 +511,25 @@ section#_3 {
 
 #_3 input {
   width: 100%;
-  padding: 12px 10px;
+  padding: 16px 14px;
   box-sizing: border-box;
-  margin: 16px 0;
-  border: 1px solid #675c3e;
-  border-radius: 4px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 10px;
   outline: none;
   position: relative;
+  font: 18px 'Playfair Display';
+}
+
+#_3 input[type='text'],
+#_3 input[type='password'] {
+  background-color: #fff3c0;
 }
 
 #_3 input[type='submit'] {
-  text-transform: uppercase;
   box-sizing: border-box;
-  background-color: #d8d8d0;
-  color: #fff;
+  background-color: #ffcd00;
+  color: #000;
   letter-spacing: 2px;
   cursor: pointer;
 }
@@ -536,19 +542,21 @@ section#_3 {
 }
 
 #_3 label {
-  color: #675c3e;
+  color: #fff;
+  font: 18px 'Playfair Display';
   position: absolute;
   z-index: 2;
-  left: 10px;
-  top: 28px;
+  left: 12px;
+  top: 36px;
   padding: 0 2px;
   pointer-events: none;
   background-color: transparent;
   transition: transform 200ms ease;
-  transform: translateY(-32px);
+  transform: translateY(-40px);
 }
 
 #_3 input:invalid + label {
+  color: #000;
   transform: translateY(0);
 }
 
@@ -557,9 +565,10 @@ section#_3 {
 }
 
 #_3 input:focus + label {
-  color: #000;
+  font: 18px 'Playfair Display';
+  color: #fff;
   background-color: transparent;
-  transform: translateY(-30px);
+  transform: translateY(-40px);
 }
 
 /*
