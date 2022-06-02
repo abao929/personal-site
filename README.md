@@ -31,7 +31,7 @@ and refactoring all this code so it's responsive.
 ---
 
 Page 2  
-Inspiration - Chobani  
+Inspiration - [Chobani](https://www.chobani.com/)  
 Colors - #193c34, #f4f3ef, and tints of each  
 Fonts - Cooper Black, Magnolia  
 Hours Spent - 6  
@@ -42,7 +42,7 @@ This form looks so much better than the previous one, though the previous patter
 ---
 
 Page 3  
-Inspiration - Tapestry  
+Inspiration - [Tapestry](https://www.tapestry.com/)  
 Colors - #ffcd00, #000, #fff3c0 - black and yellow  
 Fonts - Playfair Display  
 Hours Spent - 6  
