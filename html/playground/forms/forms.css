@@ -423,11 +423,17 @@ section#_2 {
 /*
   Page 3
   Inspiration - Tapestry
-  Colors      - 
-  Fonts       - 
-  Hours Spent - 
-  Rating      - ?/10
+  Colors      - #ffcd00, #000, #fff3c0 - black and yellow
+  Fonts       - Playfair Display
+  Hours Spent - 6
+  Rating      - 7/10
   Takeaways   - OK THIS ONE'S GONNA HAVE A FIGMA, SASS, AND RESPONSIVE - HALF WEEK PROJECT!!!
+                So I kinda lied. Only have a Figma https://www.figma.com/file/7cmxxP2rDHfeB6BYVRFCg5/Form-3?node-id=0%3A1
+                Making this responsive seems too hard because of the SVG sizing.
+                I don't think there really was a need for SASS for this section though this project as a whole
+                should have been done in SASS since it has the nested selectors which would make this a lot cleaner
+                than having to select using #_x for each page.
+                Overall, this design just looks kinda chunky and not as clean as the Figma.
 */
 
 section#_3 {
@@ -571,8 +577,20 @@ section#_3 {
   transform: translateY(-40px);
 }
 
-/*
+/* 
   Page 4
+  Inspiration - 
+  Color       -
+  Fonts       -
+  Hours Spent -
+  Rating      -
+  Takeaways   - I want to focus on designing a new layout and form style.
+                I've been mostly sticking with 50 50 layouts and the same input field styling.
+                Switch up layout and form styling a bit - maybe do lines instead of rectangles for input
+*/
+
+/*
+  Page 5?
   Inspiration - Piece of paper on a table???
   Colors - 
   Fonts - 
