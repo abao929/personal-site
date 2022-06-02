@@ -7,15 +7,11 @@ Make sure to check out the remake of it.
 
 ## [Posture Check](https://abao929.github.io/posture-check/)
 
----
-
 A silly website I built in React with Typescript that alrets you about your posture. Hosted as well on this same site and the code is linked in a [separate repository](https://github.com/abao929/posture-check)
 
 ---
 
 ## [Playground](https://abao929.github.io/html/playground/forms/forms.html)
-
----
 
 Somewhere hidden in the recesses of the site is a ["playground"](https://abao929.github.io/html/playground/forms/forms.html) of sorts. I didn't know what to name it, but it's essentially just smaller snippets of stuff that I wanted to learn/mess around with.
 
