@@ -470,8 +470,8 @@ section#_2 {
   Fonts       - Playfair Display
   Hours Spent - 6
   Rating      - 7/10
-  Takeaways   - OK THIS ONE'S GONNA HAVE A FIGMA, SASS, AND RESPONSIVE - HALF WEEK PROJECT!!!
-                So I kinda lied. Only have a Figma https://www.figma.com/file/7cmxxP2rDHfeB6BYVRFCg5/Form-3?node-id=0%3A1
+  Goals       - OK THIS ONE'S GONNA HAVE A FIGMA, SASS, AND RESPONSIVE - HALF WEEK PROJECT!!!
+  Takeaways   - So I kinda lied. Only have a Figma https://www.figma.com/file/7cmxxP2rDHfeB6BYVRFCg5/Form-3?node-id=0%3A1
                 Making this responsive seems too hard because of the SVG sizing.
                 I don't think there really was a need for SASS for this section though this project as a whole
                 should have been done in SASS since it has the nested selectors which would make this a lot cleaner
@@ -622,14 +622,15 @@ section#_3 {
 
 /* 
   Page 4
-  Inspiration - 
-  Color       -
-  Fonts       -
-  Hours Spent -
-  Rating      -
-  Takeaways   - I want to focus on designing a new layout and form style.
-                I've been mostly sticking with 50 50 layouts and the same input field styling.
-                Switch up layout and form styling a bit - maybe do lines instead of rectangles for input
+  Inspiration - A24
+  Color       - #000, #fff
+  Fonts       - Domaine Display Narrow, Helvetica Neue
+  Hours Spent - 6 - 4 Figma, 2 coding
+  Rating      - 9/10
+  Goals       - Try layout that's not 50/50 and new type of input/label styling
+  Takeaways   - Felt like this went pretty well, definitely could make this responsive,
+                but still a bit scuffed with the SVG placement/styling. SVG also has lots
+                of lines so it makes rendering suuuper slow.
 */
 section#_4 {
   --border-size: 8px;
