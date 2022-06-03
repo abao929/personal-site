@@ -631,6 +631,161 @@ section#_3 {
                 I've been mostly sticking with 50 50 layouts and the same input field styling.
                 Switch up layout and form styling a bit - maybe do lines instead of rectangles for input
 */
+section#_4 {
+  --border-size: 8px;
+  box-sizing: border-box;
+  border-top: var(--border-size) solid #ff02ff;
+  border-right: var(--border-size) solid #fdff00;
+  border-bottom: var(--border-size) solid #04feff;
+  border-left: var(--border-size) solid #06ff00;
+  position: relative;
+  background-color: #000;
+}
+
+/* Navbar */
+#_4 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  padding: 32px 5%;
+  color: #fff;
+}
+
+#_4 h1 {
+  font: 400 80px 'Domaine Display Narrow';
+}
+
+#_4 .items {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+  align-items: center;
+  flex-direction: row;
+  font: 400 24px 'Domaine Display Narrow';
+}
+
+/* SVG */
+#_4 .svg-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+#_4 .svg {
+  width: 100%;
+  height: auto;
+}
+
+/* Form */
+#_4 .form-container {
+  position: absolute;
+  bottom: 0;
+  padding: 0 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1;
+}
+
+#_4 .field {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+#_4 .signup:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#_4 input {
+  width: 30%;
+  padding: 6px 4px;
+  font: 300 32px / 32px 'Helvetica Neue';
+  color: rgb(255, 255, 255, 0.6);
+  box-sizing: border-box;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+
+#_4 label {
+  color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  z-index: 2;
+  left: 4px;
+  top: 28px;
+  font: 300 18px 'Helvetica Neue';
+  pointer-events: none;
+  background-color: transparent;
+  transition: transform 200ms ease;
+  transform: translateY(-28px);
+}
+
+#_4 input:invalid + label {
+  font: 300 32px 'Helvetica Neue';
+  color: rgba(255, 255, 255, 0.6);
+  transform: translateY(0);
+}
+
+#_4 input:focus {
+  border-color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#_4 input:focus + label {
+  font: 300 18px 'Helvetica Neue';
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent;
+  transform: translateY(-28px);
+}
+
+#_4 input:hover:invalid {
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+#_4 input:hover:invalid + label {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#_4 .forgot {
+  cursor: pointer;
+}
+
+#_4 .signup {
+  font: 300 32px 'Helvetica Neue';
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  margin: 28px 0 20px 0;
+}
+
+#_4 input[type='submit'] {
+  top: -20px;
+  float: right;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: auto;
+  padding: 20px 32px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#_4 input[type='submit']:hover {
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+}
 
 /*
   Page 5?
