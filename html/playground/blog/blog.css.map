@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CAAG;;AAEf,AAAA,OAAO,CAAC;EACN,MAAM,EAAE,KAAK;EACb,KAAK,EAAE,KAAK;CAAG;;AAEjB,AACE,MADI,CACJ,IAAI,CAAC;EACH,WAAW,EAAE,kBAAkB;EAC/B,WAAW,EAAE,GAAG;CAAG",
+    "sources": [
+        "blog.sass"
+    ],
+    "names": [],
+    "file": "blog.css"
+}

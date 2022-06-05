@@ -50,3 +50,12 @@ Rating - 6/10
 Takeaways - OK THIS ONE'S GONNA HAVE A FIGMA, SASS, AND RESPONSIVE - HALF WEEK PROJECT!!! So I kinda lied. Only have a [Figma](https://www.figma.com/file/7cmxxP2rDHfeB6BYVRFCg5/Form-3?node-id=0%3A1). Making this responsive seems too hard because of the SVG sizing. I don't think there really was a need for SASS for this section though this project as a whole should have been done in SASS since it has the nested selectors which would make this a lot cleaner than having to select using #\_x for each page. Overall, this design just looks kinda chunky and not as clean as the Figma.
 
 ---
+
+Page 4
+Inspiration - [A24](https://www.a24films.com/)
+Color - B&W
+Fonts - Domaine Display Narrow, Helvetica Neue
+Hours Spent - 6 - 4 Figma, 2 coding
+Rating - 9/10
+Goals - Try layout that's not 50/50 and new type of input/label styling
+Takeaways - Felt like this went pretty well, definitely could make this responsive, but still a bit scuffed with the SVG placement/styling. SVG also has lots of lines so it makes rendering suuuper slow. Not super satisfied with the typography, especially the navbar. Quite liking the hover effects for the bottom half - should abstract it with some variables

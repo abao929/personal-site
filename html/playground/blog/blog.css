@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+#day_1 .day {
+  font-family: adobe-garamond-pro;
+  font-weight: 400;
+}
+/*# sourceMappingURL=blog.css.map */
