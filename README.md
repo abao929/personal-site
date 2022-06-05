@@ -13,7 +13,7 @@ A silly website I built in React with Typescript that alrets you about your post
 
 ## [Playground](https://abao929.github.io/html/playground/)
 
-Somewhere hidden in the recesses of the site is a ["playground"](https://abao929.github.io/html/playground/) of sorts. I didn't know what to name it, but it's essentially just smaller snippets of stuff that I wanted to learn/mess around with.
+Somewhere hidden in the recesses of the site is a ["playground"](https://abao929.github.io/html/playground/) of sorts. I didn't know what to name it, but it's essentially just smaller snippets of stuff that I wanted to learn/mess around with. I'll get around to styling this page one day.
 
 ### Case Study: [Forms](https://abao929.github.io/html/playground/forms/forms.html)
 
