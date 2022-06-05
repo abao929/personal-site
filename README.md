@@ -51,7 +51,7 @@ Takeaways - OK THIS ONE'S GONNA HAVE A FIGMA, SASS, AND RESPONSIVE - HALF WEEK P
 
 ---
 
-Page 4
+Page 4  
 Inspiration - [A24](https://www.a24films.com/)  
 Color - B&W  
 Fonts - Domaine Display Narrow, Helvetica Neue  
