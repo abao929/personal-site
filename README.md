@@ -17,7 +17,7 @@ Somewhere hidden in the recesses of the site is a ["playground"](https://abao929
 
 ### Case Study: [Forms](https://abao929.github.io/html/playground/forms/forms.html)
 
-Page 1  
+[Page 1](https://abao929.github.io/html/playground/forms/forms.html#_1)  
 Inspiration - [Behance Design](https://www.behance.net/gallery/139962237/Industrial-Design-Portfolio-2022)  
 Colors - #f0f0e8, #675c3e, #bbb6b3, #000, #d8d8d0  
 Fonts - Default serif and sans serif fonts  
@@ -30,7 +30,7 @@ and refactoring all this code so it's responsive.
 
 ---
 
-Page 2  
+[Page 2](https://abao929.github.io/html/playground/forms/forms.html#_2)  
 Inspiration - [Chobani](https://www.chobani.com/)  
 Colors - #193c34, #f4f3ef, and tints of each  
 Fonts - Cooper Black, Magnolia  
@@ -41,7 +41,7 @@ This form looks so much better than the previous one, though the previous patter
 
 ---
 
-Page 3  
+[Page 3](https://abao929.github.io/html/playground/forms/forms.html#_3)  
 Inspiration - [Tapestry](https://www.tapestry.com/)  
 Colors - #ffcd00, #000, #fff3c0 - black and yellow  
 Fonts - Playfair Display  
@@ -51,7 +51,7 @@ Takeaways - OK THIS ONE'S GONNA HAVE A FIGMA, SASS, AND RESPONSIVE - HALF WEEK P
 
 ---
 
-Page 4  
+[Page 4](https://abao929.github.io/html/playground/forms/forms.html#_4)  
 Inspiration - [A24](https://www.a24films.com/)  
 Color - B&W  
 Fonts - Domaine Display Narrow, Helvetica Neue  
