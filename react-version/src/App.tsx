@@ -1,40 +1,56 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 import axios from 'axios';
-import internal from 'stream';
-import Country from './components/Country';
 
-type Country = {
-  CountryName: string;
-  CountryCode: string;
-  NewConfirmed: number;
-  NewDeaths: number;
-  NewRecovered: number;
-  TotalConfirmed: number;
-  TotalDeaths: number;
-  TotalRecovered: number;
+// https://randomuser.me/api
+type UserName = {
+  first: string;
+  last: string;
+  title: string;
 };
 
-function App() {
-  const [covidData, setCovidData] = useState<Country[]>([]);
+type UserPicture = {
+  thumbnail: string;
+  medium: string;
+  large: string;
+};
 
-  const getCovidData = () => {
-    axios.get('https://api.covid19api.com/summary').then((response) => {
-      setCovidData(response.data.Countries);
+type UserInfo = {
+  name: UserName;
+  picture: UserPicture;
+};
+
+export default function App() {
+  const [nextUser, setNextUser] = useState<number>(1);
+  const [userInfos, setUserInfos] = useState<UserInfo[]>([]);
+
+  const getUserData = async () => {
+    axios(`https://randomuser.me/api/?page=${nextUser}`).then((res) => {
+      setUserInfos([...userInfos, ...res.data.results]);
     });
+    setNextUser(nextUser + 1);
   };
 
   useEffect(() => {
-    getCovidData();
+    getUserData();
   }, []);
 
   return (
-    <div className="App">
-      {covidData.map((country: Country, id) => {
-        return (<Country Country=country />;
-      })}
+    <div>
+      <button
+        onClick={() => {
+          getUserData();
+        }}
+      >
+        Load Next
+      </button>
+      {userInfos.map((userInfo: UserInfo, idx: number) => (
+        <div>
+          <p>
+            {userInfo.name.first} {userInfo.name.last}
+          </p>
+          <img src={userInfo.picture.thumbnail} alt="" />
+        </div>
+      ))}
     </div>
   );
 }
-
-export default App;
