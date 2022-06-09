@@ -1,3 +1,26 @@
+@font-face {
+  font-family: magnolia;
+  src: url("../../../styles/Magnolia.ttf");
+}
+
+@font-face {
+  font-family: helvetica-neue;
+  font-weight: 100;
+  src: url("../../../styles/HelveticaNeue Light.ttf");
+}
+
+@font-face {
+  font-family: helvetica-neue;
+  font-weight: 400;
+  src: url("../../../styles/HelveticaNeue Medium.ttf");
+}
+
+@font-face {
+  font-family: helvetica-neue;
+  font-weight: 700;
+  src: url("../../../styles/Helvetica Neu Bold.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +32,16 @@ section {
 }
 
 #day_1 {
-  padding: 20px;
+  padding: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 #day_1 .sidebar {
@@ -21,8 +51,31 @@ section {
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
   height: 100%;
-  font: 400 96px adobe-garamond-pro;
-  line-height: 72px;
   text-transform: uppercase;
+}
+
+#day_1 .sidebar .day {
+  font: 400 128px / 128px adobe-garamond-pro;
+  margin-left: -46px;
+}
+
+#day_1 .sidebar .date {
+  font: 400 72px adobe-garamond-pro;
+}
+
+#day_1 .text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 0 0 60%;
+  width: 100%;
+}
+
+#day_1 .text .title {
+  font: 400 24px helvetica-neue;
+}
+
+#day_1 .text .subtitle {
+  font: 100 16px helvetica-neue;
+  text-align: justify;
 }
 /*# sourceMappingURL=blog.css.map */

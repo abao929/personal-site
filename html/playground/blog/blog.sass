@@ -1,3 +1,25 @@
+@font-face 
+  font-family: magnolia
+  src: url('../../../styles/Magnolia.ttf')
+
+
+@font-face 
+  font-family: helvetica-neue
+  font-weight: 100
+  src: url('../../../styles/HelveticaNeue\ Light.ttf')
+
+@font-face 
+  font-family: helvetica-neue
+  font-weight: 400
+  src: url('../../../styles/HelveticaNeue\ Medium.ttf')
+
+
+@font-face 
+  font-family: helvetica-neue
+  font-weight: 700
+  src: url('../../../styles/Helvetica\ Neu\ Bold.ttf')
+
+  
 *
   margin: 0
   padding: 0
@@ -7,12 +29,26 @@ section
   width: 100vw
   
 #day_1
-  padding: 20px
+  padding: 40px
   box-sizing: border-box
+  display: flex
+  flex-direction: row
   .sidebar
     writing-mode: tb-rl
     transform: rotate(-180deg)
     height: 100%
-    font: 400 96px adobe-garamond-pro
-    line-height: 72px
     text-transform: uppercase
+    .day
+      font: 400 128px / 128px adobe-garamond-pro
+      margin-left: -46px
+    .date
+      font: 400 72px adobe-garamond-pro
+  .text
+    box-sizing: border-box
+    padding: 0 0 0 60%
+    width: 100%
+    .title
+      font: 400 24px helvetica-neue
+    .subtitle
+      font: 100 16px helvetica-neue
+      text-align: justify
