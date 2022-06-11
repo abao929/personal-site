@@ -31,7 +31,7 @@ section {
   width: 100vw;
 }
 
-#day_1 {
+#day_1, #day_3 {
   padding: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -44,7 +44,7 @@ section {
           flex-direction: row;
 }
 
-#day_1 .sidebar {
+#day_1 .sidebar, #day_3 .sidebar {
   -webkit-writing-mode: tb-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: tb-rl;
@@ -54,27 +54,27 @@ section {
   text-transform: uppercase;
 }
 
-#day_1 .sidebar .day {
+#day_1 .sidebar .day, #day_3 .sidebar .day {
   font: 400 128px / 128px adobe-garamond-pro;
-  margin-left: -45px;
+  margin-left: -42px;
 }
 
-#day_1 .sidebar .date {
-  font: 400 72px adobe-garamond-pro;
+#day_1 .sidebar .date, #day_3 .sidebar .date {
+  font: 400 60px adobe-garamond-pro;
 }
 
-#day_1 .text {
+#day_1 .text, #day_3 .text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0 0 0 60%;
+  padding: 0 0 0 50%;
   width: 100%;
 }
 
-#day_1 .text .title {
+#day_1 .text .title, #day_3 .text .title {
   font: 400 24px helvetica-neue;
 }
 
-#day_1 .text .subtitle {
+#day_1 .text .subtitle, #day_3 .text .subtitle {
   font: 100 16px helvetica-neue;
   text-align: justify;
 }
