@@ -27,7 +27,7 @@ section
   height: 100vh
   width: 100vw
   
-#day_1, #day_3, #day_4
+#day_1, #day_3
   padding: 40px
   box-sizing: border-box
   display: flex
@@ -105,12 +105,66 @@ section
         margin-top: 20px
         text-align: justify
 
-#day_4
-  .sidebar
-    .day
-      font: 400 128px / 128px helvetica-neue
-      margin-left: -30px
-      letter-spacing: -8px
-    .date
-      font: 400 60px helvetica-neue
-      letter-spacing: -4px
+#day_4, #day_5
+  position: relative
+  .container
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: row
+    background-color: #f3e7d9
+    .lhs, .rhs
+      flex: 1
+      padding: 40px
+    .lhs
+      display: flex
+      align-content: center
+      justify-content: center
+      flex-direction: column
+      .day
+        font: 400 72px / 72px helvetica-neue
+        text-transform: uppercase
+      .journal
+        font: 100 72px / 72px helvetica-neue
+        text-transform: uppercase
+      .date
+        font: 100 24px helvetica-neue
+      hr
+        margin: 0 40px 8px 0
+        border: 1px solid #000
+        border-bottom: none
+    .rhs
+      display: flex
+      flex-direction: column
+      justify-content: center
+      .title
+        font: 400 36px helvetica-neue
+      .subtitle
+        text-align: justify
+        font: 100 16px helvetica-neue
+        margin: 20px 20% 20px 0
+      .gratitude
+        font: 100 16px helvetica-neue
+  .triangle
+    $triangle-size: 400px
+    position: absolute
+    display: block;
+    width: $triangle-size
+    height: $triangle-size
+    background: linear-gradient(135deg, #303030 50%, #000 100%);
+    clip-path: polygon(100% 0, 0 100%, 100% 100%)
+  .t-l
+    top: 0
+    left: 0
+    transform: rotate(180deg)
+  .b-l
+    bottom: 0
+    left: 0
+    transform: rotate(90deg)
+  .t-r
+    top: 0
+    right: 0
+    transform: rotate(270deg)
+  .b-r
+    bottom: 0
+    right: 0
